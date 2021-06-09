@@ -1,0 +1,30 @@
+<app-menu></app-menu>
+<div class="container">
+  <mat-card class="col-10" fxFlexAlign="center">
+    <div class="row">
+      <h3 class="al">
+        <p>Crear usuarios</p>
+      </h3>
+      <h5>Tipo de usuario</h5>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">Arrendador</mat-radio-button>
+          <mat-radio-button value="2">Arrendatario</mat-radio-button>
+          <mat-radio-button value="2">Fiador</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <mat-label>User name</mat-label>
+        <input matInput placeholder="User name" value="">
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" type="password" value="">
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" (click)="create()">Guardar</button>
+    <button mat-raised-button color="primary" (click)="create()">Nuevo</button>
+  </mat-card>
+</div>

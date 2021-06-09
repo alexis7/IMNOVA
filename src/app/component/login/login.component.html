@@ -1,0 +1,20 @@
+<div class="container">
+  <mat-card class="col-3" fxFlexAlign="center">
+    <div class="row">
+      <h3 class="al">
+        <p>Iniciar sesion</p>
+      </h3>
+      <mat-form-field>
+        <mat-label>User name</mat-label>
+        <input matInput placeholder="User name" value="">
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" type="password" value="">
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" class="albutton" (click)="login()">Login</button>
+  </mat-card>
+</div>
