@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,13 +13,14 @@ export class ConsultContractsComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'fiador'];
   dataSource = ELEMENT_DATA;
   clickedRows = new Set<PeriodicElement>();
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
 
   click(){
     console.log(this.clickedRows);
+    this.router.navigate(['/otp']);
   }
 
 }

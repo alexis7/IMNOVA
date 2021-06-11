@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top : 10%;
+}
+
+.al{
+  text-align:center;
+}
+
+.albutton{
+  margin-left: 40%;
+}
+
+.btn {
+  margin-left: 1%;
+}
+
+
+.min {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.center{
+  margin-left: 30%;
+}

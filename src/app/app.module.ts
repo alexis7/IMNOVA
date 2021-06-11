@@ -11,6 +11,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTableModule } from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -24,6 +26,8 @@ import { HomeComponent } from './component/home/home.component';
 import { CreateUserComponent } from './component/create-user/create-user.component';
 import { CreateContractsComponent } from './component/create-contracts/create-contracts.component';
 import { ConsultContractsComponent } from './component/consult-contracts/consult-contracts.component';
+import { OtpComponent } from './component/otp/otp.component';
+import { DialogComponent } from './component/dialog/dialog.component';
 
 
 
@@ -36,7 +40,9 @@ import { ConsultContractsComponent } from './component/consult-contracts/consult
     HomeComponent,
     CreateUserComponent,
     CreateContractsComponent,
-    ConsultContractsComponent
+    ConsultContractsComponent,
+    OtpComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +57,8 @@ import { ConsultContractsComponent } from './component/consult-contracts/consult
     MatSidenavModule,
     MatRadioModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

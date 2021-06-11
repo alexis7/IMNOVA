@@ -1,3 +1,4 @@
+import { OtpComponent } from './component/otp/otp.component';
 import { ConsultContractsComponent } from './component/consult-contracts/consult-contracts.component';
 import { CreateContractsComponent } from './component/create-contracts/create-contracts.component';
 import { HomeComponent } from './component/home/home.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'create/user', component: CreateUserComponent},
   {path: 'create/contracts', component: CreateContractsComponent},
   {path: 'consult/contracts', component: ConsultContractsComponent},
+  {path: 'otp', component: OtpComponent},
   {path: '', component: LoginComponent}
 ];
 
