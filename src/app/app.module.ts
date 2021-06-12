@@ -36,6 +36,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DialogContractComponent } from './component/dialog-contract/dialog-contract.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CreateCompanyComponent,
     ConsultContractsComponent,
     OtpComponent,
-    DialogComponent
+    DialogComponent,
+    DialogContractComponent
   ],
   imports: [
     BrowserModule,
