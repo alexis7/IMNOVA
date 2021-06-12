@@ -29,7 +29,10 @@ import { ConsultContractsComponent } from './component/consult-contracts/consult
 import { OtpComponent } from './component/otp/otp.component';
 import { DialogComponent } from './component/dialog/dialog.component';
 
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -58,7 +61,12 @@ import { DialogComponent } from './component/dialog/dialog.component';
     MatRadioModule,
     MatTableModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

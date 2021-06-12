@@ -1,1 +1,65 @@
-<p>create-contracts works!</p>
+<app-menu></app-menu>
+<div class="container">
+  <mat-card class="col-12" fxFlexAlign="center">
+    <div class="row">
+      <h1 class="al">
+        <p>Crear contrato</p>
+      </h1>
+
+    </div>
+
+    <form class="entry-form">
+      <div class="row">
+        <mat-form-field class="col-sm-6">
+          <input matInput placeholder="Número de contrato" required>
+        </mat-form-field>
+        <mat-form-field class="col-sm-6">
+          <input matInput [matDatepicker]="picker" placeholder="Fecha" required>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field class="col-sm-6">
+          <input type="text" placeholder="Arrendador" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" required>
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <mat-form-field class="col-sm-6">
+          <input type="text" placeholder="Arrendatario" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" required>
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field class="col-sm-6">
+          <input type="text" placeholder="Fiador 1" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" required>
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <mat-form-field class="col-sm-6">
+          <input type="text" placeholder="Fiador 2" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+      
+      <button mat-raised-button color="primary" (click)="create()">Guardar</button>
+      <button mat-raised-button color="primary" (click)="create()" class="btn">Nuevo</button>
+
+    </form>
+  </mat-card>
+
+</div>
