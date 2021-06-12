@@ -1,0 +1,40 @@
+<app-menu></app-menu>
+<div class="container">
+  <mat-card class="col-12" fxFlexAlign="center">
+    <div class="row">
+      <h1 class="al">
+        <p>Crear compañía</p>
+      </h1>
+
+    </div>
+
+    <form class="entry-form">
+      <div class="row">
+        <mat-form-field class="col-sm-6">
+          <input matInput placeholder="NIT" required>
+        </mat-form-field>
+        <mat-form-field class="col-sm-6">
+          <input matInput placeholder="Razón social" required>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field class="col-sm-6">
+          <input matInput placeholder="Dirección" required>
+        </mat-form-field>
+        <mat-form-field class="col-sm-6">
+          <input type="text" placeholder="Ciudad" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" required>
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button color="primary" (click)="create()">Guardar</button>
+      <button mat-raised-button color="primary" (click)="create()" class="btn">Nuevo</button>
+
+    </form>
+  </mat-card>
+
+</div>

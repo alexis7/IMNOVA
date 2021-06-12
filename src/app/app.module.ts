@@ -25,6 +25,9 @@ import { MenuComponent } from './component/menu/menu.component';
 import { HomeComponent } from './component/home/home.component';
 import { CreateUserComponent } from './component/create-user/create-user.component';
 import { CreateContractsComponent } from './component/create-contracts/create-contracts.component';
+
+import { CreateCompanyComponent } from './component/create-company/create-company.component';
+
 import { ConsultContractsComponent } from './component/consult-contracts/consult-contracts.component';
 import { OtpComponent } from './component/otp/otp.component';
 import { DialogComponent } from './component/dialog/dialog.component';
@@ -43,6 +46,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     CreateUserComponent,
     CreateContractsComponent,
+    CreateCompanyComponent,
     ConsultContractsComponent,
     OtpComponent,
     DialogComponent

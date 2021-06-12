@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top : 10%;
+}
+
+.al{
+  text-align:center;
+}
+
+.albutton{
+  margin-left: 40%;
+}
+
+.btn {
+  margin-left: 1%;
+}

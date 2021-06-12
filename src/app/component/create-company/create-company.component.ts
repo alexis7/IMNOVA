@@ -4,13 +4,13 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-create-contracts',
-  templateUrl: './create-contracts.component.html',
-  styleUrls: ['./create-contracts.component.css']
+  selector: 'app-create-company',
+  templateUrl: './create-company.component.html',
+  styleUrls: ['./create-company.component.css']
 })
-export class CreateContractsComponent implements OnInit {
+export class CreateCompanyComponent implements OnInit {
   myControl = new FormControl();
-  options: string[] = ['Ángela Arango', 'Beto Cárdenas', 'Camila Cifuentes', 'Carlos Arango', 'Felipe Arias', 'Juan Garzón', 'Juan Zapata', 'Martín Zapata', 'Óscar Sánchez', 'Pedro Cifuentes'];
+  options: string[] = ['Barranquilla','Bogotá', 'Cali', 'Medellín'];
   filteredOptions: Observable<string[]>;
   constructor() { }
 

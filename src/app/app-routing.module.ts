@@ -6,6 +6,7 @@ import { LoginComponent } from './component/login/login.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CreateUserComponent } from './component/create-user/create-user.component';
+import { CreateCompanyComponent } from './component/create-company/create-company.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'create/user', component: CreateUserComponent},
   {path: 'create/contracts', component: CreateContractsComponent},
   {path: 'consult/contracts', component: ConsultContractsComponent},
+  {path: 'create/company', component: CreateCompanyComponent},
   {path: 'otp', component: OtpComponent},
   {path: '', component: LoginComponent}
 ];
