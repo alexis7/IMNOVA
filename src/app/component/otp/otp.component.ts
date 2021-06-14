@@ -1,3 +1,4 @@
+import { DialogContractComponent } from './../dialog-contract/dialog-contract.component';
 import { Router } from '@angular/router';
 import { Component, Inject, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
@@ -43,6 +44,18 @@ export class OtpComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       this.router.navigate(['/consult/contracts']);
+    });
+  }
+
+
+  openDialogContract(): void {
+    const dialogRef = this.dialog.open(DialogContractComponent, {
+      width: '100%',
+      data: {title:'Firma', mensaje: 'Documento firmado correctamente, le llegará un email con la confirmación'}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
     });
   }
 }
