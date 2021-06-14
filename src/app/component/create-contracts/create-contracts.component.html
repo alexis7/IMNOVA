@@ -55,7 +55,13 @@
           </mat-autocomplete>
         </mat-form-field>
       </div>
-      
+      <div class="row">
+        <mat-form-field class="col-sm-6">
+          <ngx-mat-file-input placeholder="Adjuntar archivos" required>
+          </ngx-mat-file-input>
+        </mat-form-field>
+      </div>
+
       <button mat-raised-button color="primary" (click)="create()">Guardar</button>
       <button mat-raised-button color="primary" (click)="create()" class="btn">Nuevo</button>
 
